@@ -5,7 +5,7 @@ This repository contains the software architecture and implementation for an aut
 
 The project utilizes an mbed microcontroller (B-L4S5I-IOT01A) for the car's core navigation logic and a DISCO_F769NI board for remote graphical control and status monitoring over MQTT.
 
-**Author:** Theresia Mulyadi (陳友平)
+
 
 ---
 
