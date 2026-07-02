@@ -1,0 +1,34 @@
+{
+    "config": {
+        "wifi-ssid": {
+            "help": "WiFi SSID",
+            "value": "\"ASUS 22\""
+        },
+        "wifi-password": {
+            "help": "WiFi Password",
+            "value": "\"Lutfi0503\""
+        }
+    },
+    "target_overrides": {
+        "*": {
+            "platform.stdio-baud-rate": 115200,
+            "platform.stdio-buffered-serial": 1,
+            "rtos.main-thread-stack-size": 8192
+        },
+        "B_L4S5I_IOT01A": {
+            "target.components_add": ["ism43362"],
+            "ism43362.provide-default": true,
+            "target.network-default-interface-type": "WIFI",
+            "target.macros_add": ["MBEDTLS_SHA1_C"],
+            "platform.callback-nontrivial": true
+        },
+        "DISCO_F769NI": {
+            "target.network-default-interface-type": "ETHERNET",
+            "target.macros_add": ["MBEDTLS_SHA1_C"],
+            "platform.callback-nontrivial": true
+        },
+        "NUCLEO_F070RB": {
+            "target.application-profile": "bare-metal"
+        }
+    }
+}
