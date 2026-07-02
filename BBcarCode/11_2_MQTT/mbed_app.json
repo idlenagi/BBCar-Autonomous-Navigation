@@ -6,7 +6,7 @@
         },
         "wifi-password": {
             "help": "WiFi Password",
-            "value": "\"Lutfi0503\""
+            "value": "\"YourPassword\""
         }
     },
     "target_overrides": {
